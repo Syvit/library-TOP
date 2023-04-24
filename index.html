@@ -9,12 +9,19 @@
 </head>
 <body>
     <main>
+        <button class="open-form">Add Book</button>
         <fieldset class="input-form">
-            <input id="input-title" type="text">
-            <input id="input-author" type="text">
-            <input id="check-box" type="checkbox">
+            <label for="title">Title</label>
+            <input name="title" id="input-title" type="text">
+            <label for="author">Author</label>
+            <input name="author" id="input-author" type="text">
+            <span>
+                <label for="check">Completed</label>
+                <input name="check" id="check-box" type="checkbox">
+            </span>
         <button id="submit" type="submit">add to list</button>
         </fieldset>
+        <div id="blur" class="open-form"></div>
         <section id="list-container">
             <ul id="list-output"></ul>
         </section>
