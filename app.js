@@ -15,6 +15,7 @@ const library = (function(){
     openForm.addEventListener('click', formDisplay);
 
     function addBook(){
+        
         const info = {
             title: titleInput.value,
             author: authorInput.value, 
@@ -57,7 +58,7 @@ const library = (function(){
 
         removeButton.addEventListener('click', removeBook);
 
-        function removeBook(event){
+        function removeBook(){
             newBook.remove();
             library.splice(newBook.id, 1)
         }
@@ -65,7 +66,6 @@ const library = (function(){
 
 
     }
-
     function formDisplay(){
         inputForm.style.visibility = ('visible')
     }
