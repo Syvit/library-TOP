@@ -87,9 +87,9 @@ main{
 }
 
 .open-form{
-    position: absolute;
+    position: relative;
     transform: translate(-50%, -50%);
-    top: 10%;
+    top: 7%;
     left: 50%;
 }
 
@@ -99,10 +99,14 @@ main{
 }
 
 #list-output{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 100%;
-    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 80%;
+    row-gap: 2em;
 }
 
 .book-entry{
@@ -110,25 +114,23 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 200px;
-    height: 300px;
-    padding: 1em;
+    width: 80%;
+    height: 20em;
+    text-align: center;
     position: relative;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     background-color: var(--subbg);
-    border-radius: 0.5em;
 }
 
 button{
     font-weight: 700;
     padding: 1em 1.5em;
     background-color: var(--lnktxt);
-    border-radius: 0.5em;
     color: var(--maintxt);
     border: none;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .remove-button:hover{
@@ -137,7 +139,7 @@ button{
 }
 
 .open-form:hover{
-    top: 9.8%;
+    top: 6.8%;
     box-shadow: 0em 0.2em 0em var(--maintxt);
 }
 
