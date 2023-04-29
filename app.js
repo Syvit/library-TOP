@@ -80,10 +80,8 @@ const library = (function(){
                 }
                 inputForm.style.visibility = ('hidden')
                 console.log(library)
-
-    }       
-
-    }
+            }       
+        }
     function formDisplay(){
         inputForm.style.visibility = ('visible')
     }
