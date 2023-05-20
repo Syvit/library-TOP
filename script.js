@@ -42,6 +42,11 @@ function displayHandler(){
         alert('Author cannot be blank')
         return;
     }
+
+    else if(book.pages <= 0){
+        alert('Needs at least 0 pages')
+        return;
+    }
     
     else{
 
